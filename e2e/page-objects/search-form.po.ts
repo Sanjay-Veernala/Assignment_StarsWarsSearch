@@ -45,7 +45,7 @@ module.exports = {
     },  //locating Eye color under character details.
     get planetName()
     {
-        return element(by.css('app-planet h6')); //locating planet name
+        return element(by.css('app-planet h6'));        //locating planet name
     },
     get population()
     {

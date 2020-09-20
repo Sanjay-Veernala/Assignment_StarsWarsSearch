@@ -41,9 +41,6 @@ Then('I see Lukes details', { timeout: 60 * 1000 }, async () =>
         console.log("Skin color");
 });    
 
-
-
-
 When('I search for Sanjays name', { timeout: 60 * 1000 }, async () => {
     await searchFormPO.input.sendKeys('Sanjay');
     await searchFormPO.searchBtn.click();
