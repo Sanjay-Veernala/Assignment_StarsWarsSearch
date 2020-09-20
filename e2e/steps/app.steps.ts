@@ -13,6 +13,7 @@ Given('I navigate to {string}', { timeout: 60 * 1000 }, async (string) =>
 
 When('I search for Luke Skywalkers name', { timeout: 60 * 1000 }, async () =>
  {
+
     await searchFormPO.input.sendKeys('Luke Skywalker');
     await searchFormPO.searchBtn.click();
     await browser.sleep(2000);
@@ -108,6 +109,8 @@ When('I click on search or Enter', {timeout:60 * 1000}, async() =>
 
 Then('I  see empty results', {timeout:60 * 1000}, async() =>
 {
+   console.log("Empty result scenario");
+   await browser.sleep(2000);
    await chai.expect(searchFormPO.firstCharacterName.getAttribute('innerText')).to.be.empty;
     
 });
