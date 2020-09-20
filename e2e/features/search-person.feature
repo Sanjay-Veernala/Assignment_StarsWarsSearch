@@ -19,8 +19,7 @@ Feature: Search for a Star Wars character and Planet
             Given I navigate to "localhost"
             When I search for Bespin 
             Then I see planet Bespin details
-
-
+            
         Scenario: Search By Partial character name  
             Given I navigate to "localhost"
             When I search for letter a
