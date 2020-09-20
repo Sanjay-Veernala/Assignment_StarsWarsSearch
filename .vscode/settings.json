@@ -1,0 +1,6 @@
+{
+    "cucumberautocomplete.steps": [
+        "e2e/steps/*.ts"     // Featur to step definitions connection path
+    ],
+    "cucumberautocomplete.strictGherkinCompletion": true
+} 
